@@ -1,0 +1,279 @@
+/* css reset */
+@font-face {
+    font-family: 'Overpass';
+    font-style: italic;
+    font-weight: 200;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/overpass/v12/qFdU35WCmI96Ajtm81GgSdXCNs-VMF0vNLCDeqqGncOeog.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Overpass';
+    font-style: italic;
+    font-weight: 200;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/overpass/v12/qFdU35WCmI96Ajtm81GgSdXCNs-VMF0vNLCDeqqIncM.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/overpass/v12/qFda35WCmI96Ajtm83upeyoaX6QPnlo6_PPbMJqKhcc.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/overpass/v12/qFda35WCmI96Ajtm83upeyoaX6QPnlo6_PPbPpqK.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    background: transparent;
+    color: black;
+}
+
+
+
+a {
+    text-decoration: none;
+    /* make unselectable */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
+    
+    color: rgb(110, 110, 110);
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: #000000;
+    text-shadow: 0 0 4px #00000054;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #c1e0ff 0%, #f7d6f5 100%);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.heading {
+    
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    font-size: 2rem;
+    gap: 24px;
+}
+
+
+.editor {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-size: 1.5rem;
+    width: 50vmax;
+
+}
+
+.editorBottom {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1rem;
+    gap: 8px;
+}
+
+.editorSubmit {
+    /* style button */
+    background-color: #49b600;
+    color: whitesmoke;
+    border: 2px solid #44af01;
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.editorSubmit:hover {
+    background-color: #57d105;
+}
+
+.editorSubmit:active {
+    background-color: #49b600;
+}
+
+.editorSubmit:focus {
+    outline: none;
+}
+
+.editorCancel {
+    /* style button */
+    background-color: rgb(223, 223, 223);
+    color: #d61c03;
+    border: 2px solid #b4b4b4;
+    border-radius: 8px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.editorCancel:hover {
+    background-color: #d32929;
+    color: whitesmoke;
+}
+
+.editorCancel:active {
+    background-color: #991313;
+}
+
+.editorCancel:focus {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: fit-content;
+}
+
+#branding{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 200%;
+    
+}
+
+.brandingTop {
+    /* add a shadow */
+    text-shadow: 2px 2px 6px rgba(143, 143, 143, 0.541);
+    
+}
+
+.brandingBottom{
+    font-size: 34%;
+}
+
+#nav {
+    /* space each element by 2 rem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding between elements in the div */
+    font-size: 1.5rem;
+    gap: 2rem;
+}
+
+.editorTop {
+    font-size: 80%;
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    height: 40px;
+}
+
+.textMods{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 12px;
+    gap: 8px;
+}
+
+.textMod{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;    
+    border: 1px solid #00000000;
+    padding: 3px
+}
+
+.textMod img{
+    opacity: 60%;
+    height: 20px;
+}
+
+.textMod img{
+    opacity: 60%;
+    height: 20px;
+}
+
+.textMod img.active{
+    opacity: 100%;
+}
+
+.textMod:hover{
+    cursor: pointer;
+    border: 1px solid #a5a5a5;
+}
+
+
+.editorArea {
+    /* border */
+    /* blur background */
+    background-color: #ffffffb7;
+    border: 2px solid #a0a0a0b7;
+    border-radius: 12px;
+}
+
+.editorArea textarea {
+    /* add top border */
+    border-top: 2px solid #a0a0a0b7;
+    
+    font-size:medium;
+    padding: 8px;
+    width: 100%;
+    /* disable scrollbar */
+    overflow: hidden;
+    /* border */
+}
+
+.previewButton{
+    display:flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 12px;
+}
+
+.previewButton img{
+    height: 20px;
+    opacity: 60%;
+}

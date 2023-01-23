@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>The Alien Adults</title>
+</head>
+
+<body>
+    <div class="heading">
+        <div id="branding">
+            <div class="brandingTop">The Alien Adult</div>
+            <div class="brandingBottom">A GUIDE TO MATURE NEURODIVERGENCY</div>
+        </div>
+
+        <div id="search"></div>
+
+        <div id="nav">
+            <a href="">About</a>
+            <a href="">Login</a>
+            <a href="">Register</a>
+        </div>
+    </div>
+
+    <div class="editor">
+        <div class="editorArea">
+            <div class="editorTop">
+                <div class="textMods">
+                    <button class="textMod h1Button">
+                        <img src="res/icons8-header-1-30.png" alt="h1">
+                    </button>
+                    
+                    <button class="textMod italicsButton">
+                        <img src="res/icons8-italic-30.png" alt="italics">
+                    </button>
+                    <button class="textMod boldButton">
+                        <img src="res/icons8-bold-30.png" alt="bold">
+                    </button>
+                    <button class="textMod chooseFont">
+                        <img src="res/icons8-choose-font-30.png" alt="font">
+                    </button>
+                    <button></button>
+                </div>
+                <button class="previewButton">
+                    <!-- eye svg -->
+                    <img src="res/icons8-eye-48.png" alt="preview">
+                    preview
+                </button>
+            </div>
+            <textarea oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+        </div>
+
+        <div class="editorBottom">
+            <button class="editorSubmit">Submit</button>
+            <button class="editorCancel">Cancel</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="article"></div>
+    </div>
+</body>
+
+<script src="main.js"></script>
+</html>
