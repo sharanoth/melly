@@ -26,40 +26,73 @@
     </div>
 
     <div class="editor">
-        <div class="editorArea">
-            <div class="editorTop">
-                <div class="textMods">
-                    <button class="textMod h1Button">
-                        <img src="res/icons8-header-1-30.png" alt="h1">
+        <div class="editor">
+            <div class="editorArea">
+                <div class="editorTop">
+                    <div class="textMods">
+                        <button class="textMod h1Button">
+                            <img src="res/icons8-header-1-30.png" alt="h1">
+                        </button>
+                        <button class="textMod italicsButton">
+                            <img src="res/icons8-italic-30.png" alt="italics">
+                        </button>
+                        <button class="textMod boldButton">
+                            <img src="res/icons8-bold-30.png" alt="bold">
+                        </button>
+                        <button class="textMod chooseFont">
+                            <img src="res/icons8-choose-font-30.png" alt="font">
+                        </button>
+                        <button></button>
+                    </div>
+                    <button class="previewButton">
+                        <!-- eye svg -->
+                        <img src="res/icons8-eye-48.png" alt="preview">
+                        <a href="">Preview</a>
                     </button>
-                    <button class="textMod italicsButton">
-                        <img src="res/icons8-italic-30.png" alt="italics">
-                    </button>
-                    <button class="textMod boldButton">
-                        <img src="res/icons8-bold-30.png" alt="bold">
-                    </button>
-                    <button class="textMod chooseFont">
-                        <img src="res/icons8-choose-font-30.png" alt="font">
-                    </button>
-                    <button></button>
                 </div>
-                <button class="previewButton">
-                    <!-- eye svg -->
-                    <img src="res/icons8-eye-48.png" alt="preview">
-                    preview
-                </button>
+                <textarea placeholder="What's on your mind, Melly?" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
             </div>
-            <textarea oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+    
+            <div class="editorBottom">
+                <button class="editorSubmit">Submit</button>
+                <button class="editorCancel">Cancel</button>
+            </div>
         </div>
-
-        <div class="editorBottom">
-            <button class="editorSubmit">Submit</button>
-            <button class="editorCancel">Cancel</button>
-        </div>
+        
     </div>
 
     <div class="content">
-        <div class="article"></div>
+        <div class="articleCard">
+            <div class="articlePic">
+            </div>
+            <div class="articleMain">
+                <div class="title">Bouncing on my boy's dick</div>
+                <div class="preview">Neurodivergent individuals are those who have brains that work differently than the typical "neurotypical" brain. This can include conditions such as autism, ADHD, dyslexia, and others.
+
+                    One of the key aspects of neurodiversity is the recognition that these different ways of thinking and processing information are not inherently bad or deficient, but simply different. In fact, research has shown that many neurodivergent individuals possess unique strengths and abilities. For example, individuals with autism often excel in fields that require attention to detail and a strong ability to focus. Similarly, individuals with ADHD are often highly creative and able to think outside the box.</div>
+                <div class="tags">
+                    <a href="" class="tag">Medical</a>
+                    <a href="" class="tag">Lifestyle</a>
+                    <a href="" class="tag">Relationships</a>
+                    <a href="" class="tag">Daily life optimization</a>
+                </div>
+            </div>
+        </div>
+        <div class="articleCard">
+            <div class="articlePic"></div>
+            <div class="articleMain">
+                <div class="title">Bouncing on my boy's dick</div>
+                <div class="preview">Neurodivergent individuals are those who have brains that work differently than the typical "neurotypical" brain. This can include conditions such as autism, ADHD, dyslexia, and others.
+
+                    One of the key aspects of neurodiversity is the recognition that these different ways of thinking and processing information are not inherently bad or deficient, but simply different. In fact, research has shown that many neurodivergent individuals possess unique strengths and abilities. For example, individuals with autism often excel in fields that require attention to detail and a strong ability to focus. Similarly, individuals with ADHD are often highly creative and able to think outside the box.</div>
+                <div class="tags">
+                    <a href="" class="tag">Medical</a>
+                    <a href="" class="tag">Lifestyle</a>
+                    <a href="" class="tag">Relationships</a>
+                    <a href="" class="tag">Daily life optimization</a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

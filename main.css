@@ -86,7 +86,7 @@ body {
 
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .heading {
@@ -108,8 +108,8 @@ body {
     flex-direction: column;
     align-self: center;
     font-size: 1.5rem;
-    width: 50vmax;
-
+    width: 50vw;
+    padding-bottom: 3rem;
 }
 
 .editorBottom {
@@ -121,9 +121,9 @@ body {
 
 .editorSubmit {
     /* style button */
-    background-color: #49b600;
+    background-color: #56ad1c98;
     color: whitesmoke;
-    border: 2px solid #44af01;
+    border: 1px solid #44af01;
     border-radius: 8px;
     padding: 0.5rem;
     margin-top: 1rem;
@@ -132,7 +132,7 @@ body {
 }
 
 .editorSubmit:hover {
-    background-color: #57d105;
+    background-color: #58dd00;
 }
 
 .editorSubmit:active {
@@ -145,9 +145,9 @@ body {
 
 .editorCancel {
     /* style button */
-    background-color: rgb(223, 223, 223);
+    background-color: rgba(223, 223, 223, 0.5);
     color: #d61c03;
-    border: 2px solid #b4b4b4;
+    border: 1px solid #b4b4b4;
     border-radius: 8px;
     padding: 0.5rem;
     margin-top: 1rem;
@@ -170,7 +170,6 @@ body {
 
 textarea {
     resize: none;
-    height: fit-content;
 }
 
 #branding{
@@ -206,6 +205,7 @@ textarea {
     display: flex;
     justify-content: space-between;
     
+    
     align-items: center;
     height: 40px;
 }
@@ -218,11 +218,12 @@ textarea {
 }
 
 .textMod{
+    border-radius: 4px;
     height: fit-content;
     display: flex;
-    align-items: center;
-    border-radius: 8px;    
+    align-items: center; 
     border: 1px solid #00000000;
+    transition: all 0.2s ease;
     padding: 3px
 }
 
@@ -231,14 +232,6 @@ textarea {
     height: 20px;
 }
 
-.textMod img{
-    opacity: 60%;
-    height: 20px;
-}
-
-.textMod img.active{
-    opacity: 100%;
-}
 
 .textMod:hover{
     cursor: pointer;
@@ -250,13 +243,13 @@ textarea {
     /* border */
     /* blur background */
     background-color: #ffffffb7;
-    border: 2px solid #a0a0a0b7;
+    border: 1px solid #a0a0a0b7;
     border-radius: 12px;
 }
 
 .editorArea textarea {
     /* add top border */
-    border-top: 2px solid #a0a0a0b7;
+    border-top: 1px solid #a0a0a0b7;
     
     font-size:medium;
     padding: 8px;
@@ -271,9 +264,74 @@ textarea {
     align-items: center;
     gap: 8px;
     margin-right: 12px;
+    background-color: #00000000;
+    transition: all 0.2s ease;
 }
 
 .previewButton img{
     height: 20px;
     opacity: 60%;
+}
+
+
+
+.content{
+    display:flex;
+    flex-direction: column;
+    width: 50vw;
+    align-self: center;
+
+}
+
+.articleCard{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #ffffff79;
+    transition:all 0.2s ease;
+    margin-bottom: 1rem;
+}
+
+.articleCard:hover{
+    background-color: #ffffffe3;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.preview{
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    margin-bottom: 24px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag{
+    background-color: #f7ffd2b7;
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 1rem;
+}
+
+.articleMain{
+    display: flex;
+    flex-direction: column;
+}
+
+.tag:hover{
+    cursor: pointer;
+    background-color: #f6ff7db7;
 }
