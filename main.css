@@ -1,4 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* css reset */
+
 @font-face {
     font-family: 'Overpass';
     font-style: italic;
